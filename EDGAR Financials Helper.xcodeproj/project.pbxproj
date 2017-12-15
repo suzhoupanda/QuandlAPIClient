@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDDB4C951FE3746300F15323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDB4C941FE3746300F15323 /* AppDelegate.swift */; };
+		BDDB4C971FE3746300F15323 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDB4C961FE3746300F15323 /* ViewController.swift */; };
+		BDDB4C9A1FE3746300F15323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDB4C981FE3746300F15323 /* Main.storyboard */; };
+		BDDB4C9D1FE3746300F15323 /* EDGAR_Financials_Helper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDDB4C9B1FE3746300F15323 /* EDGAR_Financials_Helper.xcdatamodeld */; };
+		BDDB4C9F1FE3746300F15323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDDB4C9E1FE3746300F15323 /* Assets.xcassets */; };
+		BDDB4CA21FE3746300F15323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDB4CA01FE3746300F15323 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BDDB4C911FE3746300F15323 /* EDGAR Financials Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EDGAR Financials Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDDB4C941FE3746300F15323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDDB4C961FE3746300F15323 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDDB4C991FE3746300F15323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDDB4C9C1FE3746300F15323 /* EDGAR_Financials_Helper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EDGAR_Financials_Helper.xcdatamodel; sourceTree = "<group>"; };
+		BDDB4C9E1FE3746300F15323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDDB4CA11FE3746300F15323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDDB4CA31FE3746300F15323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDDB4C8E1FE3746300F15323 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDDB4C881FE3746300F15323 = {
+			isa = PBXGroup;
+			children = (
+				BDDB4C931FE3746300F15323 /* EDGAR Financials Helper */,
+				BDDB4C921FE3746300F15323 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDDB4C921FE3746300F15323 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDDB4C911FE3746300F15323 /* EDGAR Financials Helper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDDB4C931FE3746300F15323 /* EDGAR Financials Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BDDB4C941FE3746300F15323 /* AppDelegate.swift */,
+				BDDB4C961FE3746300F15323 /* ViewController.swift */,
+				BDDB4C981FE3746300F15323 /* Main.storyboard */,
+				BDDB4C9E1FE3746300F15323 /* Assets.xcassets */,
+				BDDB4CA01FE3746300F15323 /* LaunchScreen.storyboard */,
+				BDDB4CA31FE3746300F15323 /* Info.plist */,
+				BDDB4C9B1FE3746300F15323 /* EDGAR_Financials_Helper.xcdatamodeld */,
+			);
+			path = "EDGAR Financials Helper";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDDB4C901FE3746300F15323 /* EDGAR Financials Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDDB4CA61FE3746300F15323 /* Build configuration list for PBXNativeTarget "EDGAR Financials Helper" */;
+			buildPhases = (
+				BDDB4C8D1FE3746300F15323 /* Sources */,
+				BDDB4C8E1FE3746300F15323 /* Frameworks */,
+				BDDB4C8F1FE3746300F15323 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EDGAR Financials Helper";
+			productName = "EDGAR Financials Helper";
+			productReference = BDDB4C911FE3746300F15323 /* EDGAR Financials Helper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDDB4C891FE3746300F15323 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Aleksander Makedonski";
+				TargetAttributes = {
+					BDDB4C901FE3746300F15323 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BDDB4C8C1FE3746300F15323 /* Build configuration list for PBXProject "EDGAR Financials Helper" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDDB4C881FE3746300F15323;
+			productRefGroup = BDDB4C921FE3746300F15323 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDDB4C901FE3746300F15323 /* EDGAR Financials Helper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDDB4C8F1FE3746300F15323 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDDB4CA21FE3746300F15323 /* LaunchScreen.storyboard in Resources */,
+				BDDB4C9F1FE3746300F15323 /* Assets.xcassets in Resources */,
+				BDDB4C9A1FE3746300F15323 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDDB4C8D1FE3746300F15323 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDDB4C9D1FE3746300F15323 /* EDGAR_Financials_Helper.xcdatamodeld in Sources */,
+				BDDB4C971FE3746300F15323 /* ViewController.swift in Sources */,
+				BDDB4C951FE3746300F15323 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BDDB4C981FE3746300F15323 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDDB4C991FE3746300F15323 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDDB4CA01FE3746300F15323 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDDB4CA11FE3746300F15323 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDDB4CA41FE3746300F15323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDDB4CA51FE3746300F15323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDDB4CA71FE3746300F15323 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T9J39WJJ9G;
+				INFOPLIST_FILE = "EDGAR Financials Helper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ChangzhouPanda.EDGAR-Financials-Helper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDDB4CA81FE3746300F15323 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T9J39WJJ9G;
+				INFOPLIST_FILE = "EDGAR Financials Helper/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ChangzhouPanda.EDGAR-Financials-Helper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDDB4C8C1FE3746300F15323 /* Build configuration list for PBXProject "EDGAR Financials Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDDB4CA41FE3746300F15323 /* Debug */,
+				BDDB4CA51FE3746300F15323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDDB4CA61FE3746300F15323 /* Build configuration list for PBXNativeTarget "EDGAR Financials Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDDB4CA71FE3746300F15323 /* Debug */,
+				BDDB4CA81FE3746300F15323 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BDDB4C9B1FE3746300F15323 /* EDGAR_Financials_Helper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BDDB4C9C1FE3746300F15323 /* EDGAR_Financials_Helper.xcdatamodel */,
+			);
+			currentVersion = BDDB4C9C1FE3746300F15323 /* EDGAR_Financials_Helper.xcdatamodel */;
+			path = EDGAR_Financials_Helper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BDDB4C891FE3746300F15323 /* Project object */;
+}
