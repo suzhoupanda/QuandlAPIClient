@@ -14,6 +14,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+      
+        EdgarAPIClient.sharedClient.perforumDebugURLRequest(forTicker: "FDX", forEndpoint: .BalanceSheet, forFormType: nil, withFilingOrder: nil)
+        
+
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let startDate = dateFormatter.date(from: "2005-01-01")!

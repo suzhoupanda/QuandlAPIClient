@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EDGAR Financials Helper/EdgarAPIClient.swift"
+            timestampString = "535366257.437511"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "238"
+            endingLineNumber = "238"
+            landmarkName = "debugCompletionHandler"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EDGAR_Financials_Helper.EdgarAPIClient.performURLRequest(withTicker: Swift.String, withEndpoint: EDGAR_Financials_Helper.EdgarAPIRequest.APIEndpoint, forFormType: Swift.Optional&lt;Swift.String&gt;, withFilingOrder: Swift.Optional&lt;Swift.String&gt;, withJSONTaskCompletionHandler: (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "EDGAR Financials Helper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yongrenwang/Desktop/EDGAR%20Financials%20Helper/EDGAR%20Financials%20Helper/EdgarAPIClient.swift"
+                  timestampString = "535014616.447169"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "1833">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__ObjC.URLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in EDGAR_Financials_Helper.EdgarAPIClient.performURLRequest(withTicker: Swift.String, withEndpoint: EDGAR_Financials_Helper.EdgarAPIRequest.APIEndpoint, forFormType: Swift.Optional&lt;Swift.String&gt;, withFilingOrder: Swift.Optional&lt;Swift.String&gt;, withJSONTaskCompletionHandler: (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "EDGAR Financials Helper"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yongrenwang/Desktop/EDGAR%20Financials%20Helper/EDGAR%20Financials%20Helper/EdgarAPIClient.swift"
+                  timestampString = "535014616.449867"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "132"
+                  endingLineNumber = "132"
+                  offsetFromSymbolStart = "54">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
