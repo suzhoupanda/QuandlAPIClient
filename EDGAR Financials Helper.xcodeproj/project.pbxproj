@@ -7,15 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD06967B1FE684CA00E1C270 /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06967A1FE684CA00E1C270 /* DataFetcher.swift */; };
+		BD06967E1FE688C200E1C270 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06967D1FE688C200E1C270 /* CoreDataStack.swift */; };
+		BD30A4B51FE7A68100276168 /* QuandlAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD30A4B41FE7A68100276168 /* QuandlAPIRequest.swift */; };
+		BD30A4B71FE7A72E00276168 /* QuandlAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD30A4B61FE7A72E00276168 /* QuandlAPIClient.swift */; };
+		BD5E59761FE4D0C0003F601C /* TickerSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5E59751FE4D0C0003F601C /* TickerSymbol.swift */; };
+		BD5E59781FE4E535003F601C /* APIRequestNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5E59771FE4E535003F601C /* APIRequestNode.swift */; };
+		BD5E597A1FE4E5D8003F601C /* APIRequestNodeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5E59791FE4E5D8003F601C /* APIRequestNodeList.swift */; };
 		BDDB4C951FE3746300F15323 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDB4C941FE3746300F15323 /* AppDelegate.swift */; };
 		BDDB4C971FE3746300F15323 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDB4C961FE3746300F15323 /* ViewController.swift */; };
 		BDDB4C9A1FE3746300F15323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDB4C981FE3746300F15323 /* Main.storyboard */; };
 		BDDB4C9D1FE3746300F15323 /* EDGAR_Financials_Helper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDDB4C9B1FE3746300F15323 /* EDGAR_Financials_Helper.xcdatamodeld */; };
 		BDDB4C9F1FE3746300F15323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDDB4C9E1FE3746300F15323 /* Assets.xcassets */; };
 		BDDB4CA21FE3746300F15323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDB4CA01FE3746300F15323 /* LaunchScreen.storyboard */; };
+		BDDB4CAC1FE39C7500F15323 /* EdgarAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDB4CAB1FE39C7500F15323 /* EdgarAPIClient.swift */; };
+		BDDB4CAE1FE3AB0900F15323 /* DebugFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDB4CAD1FE3AB0900F15323 /* DebugFlags.swift */; };
+		BDDB4CB01FE3ADDA00F15323 /* JSONSample.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BDDB4CAF1FE3ADDA00F15323 /* JSONSample.rtf */; };
+		BDDB4CCA1FE3BA1E00F15323 /* JSONReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDB4CC91FE3BA1E00F15323 /* JSONReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD06967A1FE684CA00E1C270 /* DataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
+		BD06967D1FE688C200E1C270 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		BD0808251FE90AAE00A7D7BB /* EDGAR_Financials_Helper 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "EDGAR_Financials_Helper 3.xcdatamodel"; sourceTree = "<group>"; };
+		BD30A4B41FE7A68100276168 /* QuandlAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuandlAPIRequest.swift; sourceTree = "<group>"; };
+		BD30A4B61FE7A72E00276168 /* QuandlAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuandlAPIClient.swift; sourceTree = "<group>"; };
+		BD5E59751FE4D0C0003F601C /* TickerSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerSymbol.swift; sourceTree = "<group>"; };
+		BD5E59771FE4E535003F601C /* APIRequestNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestNode.swift; sourceTree = "<group>"; };
+		BD5E59791FE4E5D8003F601C /* APIRequestNodeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestNodeList.swift; sourceTree = "<group>"; };
 		BDDB4C911FE3746300F15323 /* EDGAR Financials Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EDGAR Financials Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDB4C941FE3746300F15323 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDDB4C961FE3746300F15323 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +43,11 @@
 		BDDB4C9E1FE3746300F15323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDDB4CA11FE3746300F15323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDDB4CA31FE3746300F15323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDDB4CAB1FE39C7500F15323 /* EdgarAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgarAPIClient.swift; sourceTree = "<group>"; };
+		BDDB4CAD1FE3AB0900F15323 /* DebugFlags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugFlags.swift; sourceTree = "<group>"; };
+		BDDB4CAF1FE3ADDA00F15323 /* JSONSample.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = JSONSample.rtf; sourceTree = "<group>"; };
+		BDDB4CC91FE3BA1E00F15323 /* JSONReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONReader.swift; sourceTree = "<group>"; };
+		BDDB4CCD1FE4043800F15323 /* EDGAR_Financials_Helper 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "EDGAR_Financials_Helper 2.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +61,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD06967C1FE686BD00E1C270 /* CoreDataStacks */ = {
+			isa = PBXGroup;
+			children = (
+				BDDB4C9B1FE3746300F15323 /* EDGAR_Financials_Helper.xcdatamodeld */,
+				BD06967D1FE688C200E1C270 /* CoreDataStack.swift */,
+			);
+			path = CoreDataStacks;
+			sourceTree = "<group>";
+		};
+		BD0808261FE90E6500A7D7BB /* EdgarAPIClient */ = {
+			isa = PBXGroup;
+			children = (
+				BDDB4CAB1FE39C7500F15323 /* EdgarAPIClient.swift */,
+			);
+			path = EdgarAPIClient;
+			sourceTree = "<group>";
+		};
+		BD0808271FE90E8200A7D7BB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BD5E59751FE4D0C0003F601C /* TickerSymbol.swift */,
+				BD5E59791FE4E5D8003F601C /* APIRequestNodeList.swift */,
+				BD5E59771FE4E535003F601C /* APIRequestNode.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BD0808281FE90EB200A7D7BB /* QuandlAPI */ = {
+			isa = PBXGroup;
+			children = (
+				BD30A4B41FE7A68100276168 /* QuandlAPIRequest.swift */,
+				BD30A4B61FE7A72E00276168 /* QuandlAPIClient.swift */,
+			);
+			path = QuandlAPI;
+			sourceTree = "<group>";
+		};
+		BD0808291FE90ECA00A7D7BB /* JSONReader */ = {
+			isa = PBXGroup;
+			children = (
+				BDDB4CC91FE3BA1E00F15323 /* JSONReader.swift */,
+				BDDB4CAF1FE3ADDA00F15323 /* JSONSample.rtf */,
+			);
+			path = JSONReader;
+			sourceTree = "<group>";
+		};
+		BD08082A1FE90EDC00A7D7BB /* DataFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				BD06967A1FE684CA00E1C270 /* DataFetcher.swift */,
+			);
+			path = DataFetcher;
+			sourceTree = "<group>";
+		};
 		BDDB4C881FE3746300F15323 = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +135,17 @@
 			children = (
 				BDDB4C941FE3746300F15323 /* AppDelegate.swift */,
 				BDDB4C961FE3746300F15323 /* ViewController.swift */,
+				BD06967C1FE686BD00E1C270 /* CoreDataStacks */,
 				BDDB4C981FE3746300F15323 /* Main.storyboard */,
 				BDDB4C9E1FE3746300F15323 /* Assets.xcassets */,
 				BDDB4CA01FE3746300F15323 /* LaunchScreen.storyboard */,
 				BDDB4CA31FE3746300F15323 /* Info.plist */,
-				BDDB4C9B1FE3746300F15323 /* EDGAR_Financials_Helper.xcdatamodeld */,
+				BD08082A1FE90EDC00A7D7BB /* DataFetcher */,
+				BDDB4CAD1FE3AB0900F15323 /* DebugFlags.swift */,
+				BD0808291FE90ECA00A7D7BB /* JSONReader */,
+				BD0808271FE90E8200A7D7BB /* Utils */,
+				BD0808261FE90E6500A7D7BB /* EdgarAPIClient */,
+				BD0808281FE90EB200A7D7BB /* QuandlAPI */,
 			);
 			path = "EDGAR Financials Helper";
 			sourceTree = "<group>";
@@ -126,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDDB4CB01FE3ADDA00F15323 /* JSONSample.rtf in Resources */,
 				BDDB4CA21FE3746300F15323 /* LaunchScreen.storyboard in Resources */,
 				BDDB4C9F1FE3746300F15323 /* Assets.xcassets in Resources */,
 				BDDB4C9A1FE3746300F15323 /* Main.storyboard in Resources */,
@@ -140,8 +224,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDDB4C9D1FE3746300F15323 /* EDGAR_Financials_Helper.xcdatamodeld in Sources */,
+				BD5E597A1FE4E5D8003F601C /* APIRequestNodeList.swift in Sources */,
 				BDDB4C971FE3746300F15323 /* ViewController.swift in Sources */,
 				BDDB4C951FE3746300F15323 /* AppDelegate.swift in Sources */,
+				BDDB4CAE1FE3AB0900F15323 /* DebugFlags.swift in Sources */,
+				BD30A4B51FE7A68100276168 /* QuandlAPIRequest.swift in Sources */,
+				BD06967E1FE688C200E1C270 /* CoreDataStack.swift in Sources */,
+				BD06967B1FE684CA00E1C270 /* DataFetcher.swift in Sources */,
+				BD5E59761FE4D0C0003F601C /* TickerSymbol.swift in Sources */,
+				BD30A4B71FE7A72E00276168 /* QuandlAPIClient.swift in Sources */,
+				BDDB4CCA1FE3BA1E00F15323 /* JSONReader.swift in Sources */,
+				BDDB4CAC1FE39C7500F15323 /* EdgarAPIClient.swift in Sources */,
+				BD5E59781FE4E535003F601C /* APIRequestNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,9 +425,11 @@
 		BDDB4C9B1FE3746300F15323 /* EDGAR_Financials_Helper.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				BD0808251FE90AAE00A7D7BB /* EDGAR_Financials_Helper 3.xcdatamodel */,
+				BDDB4CCD1FE4043800F15323 /* EDGAR_Financials_Helper 2.xcdatamodel */,
 				BDDB4C9C1FE3746300F15323 /* EDGAR_Financials_Helper.xcdatamodel */,
 			);
-			currentVersion = BDDB4C9C1FE3746300F15323 /* EDGAR_Financials_Helper.xcdatamodel */;
+			currentVersion = BD0808251FE90AAE00A7D7BB /* EDGAR_Financials_Helper 3.xcdatamodel */;
 			path = EDGAR_Financials_Helper.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

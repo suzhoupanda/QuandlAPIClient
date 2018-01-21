@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="17B1003" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BalanceSheet" representedClassName="BalanceSheet" syncable="YES" codeGenerationType="class">
+        <relationship name="balanceSheetSummary" maxCount="1" deletionRule="Nullify" destinationEntity="BalanceSheetSummary" inverseName="balanceSheet" inverseEntity="BalanceSheetSummary" syncable="YES"/>
+        <relationship name="currentAssets" maxCount="1" deletionRule="Cascade" destinationEntity="CurrentAssets" inverseName="balanceSheet" inverseEntity="CurrentAssets" syncable="YES"/>
+        <relationship name="currentLiabilities" maxCount="1" deletionRule="Cascade" destinationEntity="CurrentLiabilities" inverseName="balanceSheet" inverseEntity="CurrentLiabilities" syncable="YES"/>
+        <relationship name="noncurrentAssets" maxCount="1" deletionRule="Cascade" destinationEntity="NoncurrentAssets" inverseName="noncurrentAssets" inverseEntity="NoncurrentAssets" syncable="YES"/>
+        <relationship name="noncurrentLiabilities" maxCount="1" deletionRule="Cascade" destinationEntity="NoncurrentLiabilities" inverseName="balanceSheet" inverseEntity="NoncurrentLiabilities" syncable="YES"/>
+        <relationship name="statementInfo" maxCount="1" deletionRule="Nullify" destinationEntity="StatementInfo" syncable="YES"/>
+        <relationship name="stockHoldersEquity" maxCount="1" deletionRule="Cascade" destinationEntity="StockHoldersEquity" inverseName="balanceSheet" inverseEntity="StockHoldersEquity" syncable="YES"/>
+    </entity>
+    <entity name="BalanceSheetSummary" representedClassName="BalanceSheetSummary" syncable="YES" codeGenerationType="class">
+        <attribute name="totalAssets" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="totalCurrentAssets" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="totalCurrentLiabilities" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="totalLiabilities" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="totalLiabilitiesAndStockHoldersEquity" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="totalStockHoldersEquity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="balanceSheet" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BalanceSheet" inverseName="balanceSheetSummary" inverseEntity="BalanceSheet" syncable="YES"/>
+    </entity>
+    <entity name="CashFlowsStatement" representedClassName="CashFlowsStatement" syncable="YES" codeGenerationType="class">
+        <attribute name="allocatedShareBasedCompensationExpense" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cashAndCashEquivalentsAtCarryingValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cashAndCashEquivalentsPeriodIncreaseDecrease" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="deferredIncomeTaxExpenseBenefit" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="effectOfExchangeRateOnCashAndCashEquivalents" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="excessTaxBenefitFromShareBasedCompensationFinancingActivities" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="excessTaxBenefitFromShareBasedCompensationOperatingActivities" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="goodwillImpairmentLoss" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="increaseDecreaseInAccountsPayable" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="increaseDecreaseInAccountsReceivable" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="increaseDecreaseInCollateralHeldUnderSecuritiesLending" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="increaseDecreaseInDeferredRevenue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="increaseDecreaseInInventories" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="increaseDecreaseInOtherCurrentAssets" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="increaseDecreaseInOtherCurrentLiabilities" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="increaseDecreaseInOtherNoncurrentAssets" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="increaseDecreaseInOtherNoncurrentLiabilities" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="netCashProvidedByUsedInFinancingActivitiesContinuingOperations" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="netCashProvidedByUsedInInvestingActivitiesContinuingOperations" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="netCashProvidedByUsedInOperatingActivitiesContinuingOperations" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="netIncomeLoss" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="paymentsForRepurchaseOfCommonStock" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="paymentsOfDividendsCommonStock" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="paymentsToAcquireInvestments" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="paymentsToAcquirePropertyPlantAndEquipment" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="proceedsFromDebtMaturingInMoreThanThreeMonths" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="proceedsFromIssuanceOfCommonStock" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="proceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="proceedsFromPaymentsForOtherFinancingActivities" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="proceedsFromRepaymentsOfShortTermDebtMaturingInThreeMonthsOrLess" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="proceedsFromSaleOfAvailableForSaleSecurities" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="recognitionOfDeferredRevenue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="repaymentsOfDebtMaturingInMoreThanThreeMonths" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="htmlContent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HTMLContent" syncable="YES"/>
+        <relationship name="statementInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StatementInfo" syncable="YES"/>
+    </entity>
+    <entity name="CurrentAssets" representedClassName="CurrentAssets" syncable="YES" codeGenerationType="class">
+        <attribute name="accountsReceivableNetCurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="availableForSaleSecuritiesCurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cashAndCashEquivalentsAtCarryingValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cashCashEquivalentsAndShortTermInvestments" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="deferredTaxAssetsLiabilitiesNetCurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="inventoryNet" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="otherAssetsCurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="balanceSheet" maxCount="1" deletionRule="Nullify" destinationEntity="BalanceSheet" inverseName="currentAssets" inverseEntity="BalanceSheet" syncable="YES"/>
+    </entity>
+    <entity name="CurrentLiabilities" representedClassName="CurrentLiabilities" syncable="YES" codeGenerationType="class">
+        <attribute name="accountsPayableCurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="accruedIncomeTaxesCurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="deferredRevenueCurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="depositsReceivedForSecuritiesLoanedAtCarryingValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="employeeRelatedLiabilitiesCurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longTermDebtCurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="otherLiabilitiesCurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="shortTermBorrowings" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="balanceSheet" maxCount="1" deletionRule="Nullify" destinationEntity="BalanceSheet" inverseName="currentLiabilities" inverseEntity="BalanceSheet" syncable="YES"/>
+    </entity>
+    <entity name="DailyQuoteSummary" representedClassName="DailyQuoteSummary" syncable="YES" codeGenerationType="class">
+        <attribute name="adjustedClose" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="adjustedHigh" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="adjustedLow" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="adjustedOpen" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="adjustedVolume" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="close" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="exDividend" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="high" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="low" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="open" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="splitRatio" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="volume" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="stockQuotePeriod" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StockQuotePeriod" inverseName="dailyQuoteSummary" inverseEntity="StockQuotePeriod" syncable="YES"/>
+    </entity>
+    <entity name="HTMLContent" representedClassName="HTMLContent" syncable="YES" codeGenerationType="class">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="IncomeStatement" representedClassName="IncomeStatement" syncable="YES" codeGenerationType="class">
+        <attribute name="businessCombinationIntegrationRelatedCosts" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="costOfRevenue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="generalAndAdministrativeExpense" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="goodWillImpairmentLoss" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="grossProfit" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="incomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="incomeTaxExpenseBenefit" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="netIncomeLoss" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nonOperatingIncomeExpense" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="operatingIncomeLoss" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="researchAndDevelopmentExpense" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="salesRevenueNet" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="sellingAndMarketingExpense" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="htmlContent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HTMLContent" syncable="YES"/>
+        <relationship name="perShareInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PerShareInfo" inverseName="incomeStatement" inverseEntity="PerShareInfo" syncable="YES"/>
+        <relationship name="statementInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StatementInfo" syncable="YES"/>
+    </entity>
+    <entity name="NoncurrentAssets" representedClassName="NoncurrentAssets" syncable="YES" codeGenerationType="class">
+        <attribute name="finiteLivedIntangibleAssetsNet" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="goodwill" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longTermInvestments" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="otherAssetsNoncurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="propertyPlantAndEquipmentNet" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="noncurrentAssets" maxCount="1" deletionRule="Nullify" destinationEntity="BalanceSheet" inverseName="noncurrentAssets" inverseEntity="BalanceSheet" syncable="YES"/>
+    </entity>
+    <entity name="NoncurrentLiabilities" representedClassName="NoncurrentLiabilities" syncable="YES" codeGenerationType="class">
+        <attribute name="deferredRevenueNoncurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="deferredTaxLiabilitiesNoncurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longTermDebtNoncurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="otherLiabilitiesNoncurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="balanceSheet" maxCount="1" deletionRule="Nullify" destinationEntity="BalanceSheet" inverseName="noncurrentLiabilities" inverseEntity="BalanceSheet" syncable="YES"/>
+    </entity>
+    <entity name="PerShareInfo" representedClassName="PerShareInfo" syncable="YES" codeGenerationType="class">
+        <attribute name="commonStockDividendsPerShareDeclared" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="earningsPerShareBasic" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="earningsPerShareDiluted" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="weightedAverageNumberOfDilutedSharesOutstanding" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="weightedAverageNumberOfSharesOutstandingBasic" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="incomeStatement" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IncomeStatement" inverseName="perShareInfo" inverseEntity="IncomeStatement" syncable="YES"/>
+    </entity>
+    <entity name="StatementInfo" representedClassName="StatementInfo" syncable="YES" codeGenerationType="class">
+        <attribute name="accessionNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cik" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="companyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filingCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="filingDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="source" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="statementName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="StockHoldersEquity" representedClassName="StockHoldersEquity" syncable="YES" codeGenerationType="class">
+        <attribute name="accumulatedOtherComprehensiveIncomeLossNetOfTax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="commonStocksIncludingAdditionalPaidInCapital" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="retainedEarningsAccumulatedDeficit" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="balanceSheet" maxCount="1" deletionRule="Nullify" destinationEntity="BalanceSheet" inverseName="stockHoldersEquity" inverseEntity="BalanceSheet" syncable="YES"/>
+    </entity>
+    <entity name="StockQuotePeriod" representedClassName="StockQuotePeriod" syncable="YES" codeGenerationType="class">
+        <attribute name="companyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="dailyQuoteSummary" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DailyQuoteSummary" inverseName="stockQuotePeriod" inverseEntity="DailyQuoteSummary" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BalanceSheet" positionX="-63" positionY="117" width="128" height="150"/>
+        <element name="BalanceSheetSummary" positionX="-54" positionY="36" width="128" height="150"/>
+        <element name="CashFlowsStatement" positionX="-29" positionY="-82" width="128" height="73"/>
+        <element name="CurrentAssets" positionX="-254" positionY="9" width="128" height="165"/>
+        <element name="CurrentLiabilities" positionX="25" positionY="-117" width="128" height="180"/>
+        <element name="DailyQuoteSummary" positionX="-9" positionY="72" width="128" height="255"/>
+        <element name="HTMLContent" positionX="-11" positionY="-126" width="128" height="60"/>
+        <element name="IncomeStatement" positionX="-54" positionY="36" width="128" height="285"/>
+        <element name="NoncurrentAssets" positionX="-254" positionY="180" width="128" height="135"/>
+        <element name="NoncurrentLiabilities" positionX="108" positionY="99" width="128" height="120"/>
+        <element name="PerShareInfo" positionX="-45" positionY="45" width="128" height="135"/>
+        <element name="StatementInfo" positionX="-36" positionY="54" width="128" height="150"/>
+        <element name="StockHoldersEquity" positionX="153" positionY="243" width="128" height="105"/>
+        <element name="StockQuotePeriod" positionX="0" positionY="81" width="128" height="105"/>
+    </elements>
+</model>

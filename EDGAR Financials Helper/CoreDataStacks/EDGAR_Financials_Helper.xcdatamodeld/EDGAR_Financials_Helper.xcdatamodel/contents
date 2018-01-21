@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="17B1003" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BalanceSheet" representedClassName="BalanceSheet" syncable="YES" codeGenerationType="class">
+        <attribute name="accessionNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cik" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="companyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="filingDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="source" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="currentAssets" maxCount="1" deletionRule="Cascade" destinationEntity="CurrentAssets" inverseName="balanceSheet" inverseEntity="CurrentAssets" syncable="YES"/>
+        <relationship name="currentLiabilities" maxCount="1" deletionRule="Cascade" destinationEntity="CurrentLiabilities" inverseName="balanceSheet" inverseEntity="CurrentLiabilities" syncable="YES"/>
+        <relationship name="noncurrentAssets" maxCount="1" deletionRule="Cascade" destinationEntity="NoncurrentAssets" inverseName="noncurrentAssets" inverseEntity="NoncurrentAssets" syncable="YES"/>
+        <relationship name="noncurrentLiabilities" maxCount="1" deletionRule="Cascade" destinationEntity="NoncurrentLiabilities" inverseName="balanceSheet" inverseEntity="NoncurrentLiabilities" syncable="YES"/>
+        <relationship name="stockHoldersEquity" maxCount="1" deletionRule="Cascade" destinationEntity="StockHoldersEquity" inverseName="balanceSheet" inverseEntity="StockHoldersEquity" syncable="YES"/>
+    </entity>
+    <entity name="CurrentAssets" representedClassName="CurrentAssets" syncable="YES" codeGenerationType="class">
+        <attribute name="accountsReceivableNetCurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="availableForSaleSecuritiesCurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cashAndCashEquivalentsAtCarryingValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="cashCashEquivalentsAndShortTermInvestments" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="deferredTaxAssetsLiabilitiesNetCurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="inventoryNet" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="otherAssetsCurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="balanceSheet" maxCount="1" deletionRule="Nullify" destinationEntity="BalanceSheet" inverseName="currentAssets" inverseEntity="BalanceSheet" syncable="YES"/>
+    </entity>
+    <entity name="CurrentLiabilities" representedClassName="CurrentLiabilities" syncable="YES" codeGenerationType="class">
+        <attribute name="accountsPayableCurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="accruedIncomeTaxesCurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="deferredRevenueCurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="depositsReceivedForSecuritiesLoanedAtCarryingValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="employeeRelatedLiabilitiesCurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longTermDebtCurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="otherLiabilitiesCurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="shortTermBorrowings" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="balanceSheet" maxCount="1" deletionRule="Nullify" destinationEntity="BalanceSheet" inverseName="currentLiabilities" inverseEntity="BalanceSheet" syncable="YES"/>
+    </entity>
+    <entity name="NoncurrentAssets" representedClassName="NoncurrentAssets" syncable="YES" codeGenerationType="class">
+        <attribute name="finiteLivedIntangibleAssetsNet" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="goodwill" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longTermInvestments" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="otherAssetsNoncurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="propertyPlantAndEquipmentNet" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="noncurrentAssets" maxCount="1" deletionRule="Nullify" destinationEntity="BalanceSheet" inverseName="noncurrentAssets" inverseEntity="BalanceSheet" syncable="YES"/>
+    </entity>
+    <entity name="NoncurrentLiabilities" representedClassName="NoncurrentLiabilities" syncable="YES" codeGenerationType="class">
+        <attribute name="deferredRevenueNoncurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="deferredTaxLiabilitiesNoncurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longTermDebtNoncurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="otherLiabilitiesNoncurrent" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="balanceSheet" maxCount="1" deletionRule="Nullify" destinationEntity="BalanceSheet" inverseName="noncurrentLiabilities" inverseEntity="BalanceSheet" syncable="YES"/>
+    </entity>
+    <entity name="StockHoldersEquity" representedClassName="StockHoldersEquity" syncable="YES" codeGenerationType="class">
+        <attribute name="accumulatedOtherComprehensiveIncomeLossNetOfTax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="commonStocksIncludingAdditionalPaidInCapital" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="retainedEarningsAccumulatedDeficit" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="balanceSheet" maxCount="1" deletionRule="Nullify" destinationEntity="BalanceSheet" inverseName="stockHoldersEquity" inverseEntity="BalanceSheet" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BalanceSheet" positionX="-63" positionY="117" width="128" height="118"/>
+        <element name="CurrentAssets" positionX="-254" positionY="9" width="128" height="165"/>
+        <element name="CurrentLiabilities" positionX="25" positionY="-117" width="128" height="180"/>
+        <element name="NoncurrentAssets" positionX="-254" positionY="180" width="128" height="135"/>
+        <element name="NoncurrentLiabilities" positionX="108" positionY="99" width="128" height="120"/>
+        <element name="StockHoldersEquity" positionX="153" positionY="243" width="128" height="105"/>
+    </elements>
+</model>
